@@ -1,9 +1,10 @@
 package com.lambdatest.demo.tests;
 
 
+import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
-
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -16,6 +17,20 @@ import com.lambdatest.demo.utils.Constants;
 
 public class LTLoginPageTest extends BaseTest {
 
+//	ChromeOptions browserOptions = new ChromeOptions();
+//	browserOptions.setPlatformName("Windows 10");
+//	browserOptions.setBrowserVersion("110.0");
+//	HashMap<String, Object> ltOptions = new HashMap<String, Object>();
+//	ltOptions.put("username", "sneha.pasarkar");
+//	ltOptions.put("accessKey", "QtAW5uQhVNm7fcOvwDSeSn7CQcgDY53c2GUeGzr28ai5eIfGkc");
+//	ltOptions.put("visual", true);
+//	ltOptions.put("video", true);
+//	ltOptions.put("build", "FM Demo1");
+//	ltOptions.put("project", "FM Demo1");
+//	ltOptions.put("name", "FM Login");
+//	ltOptions.put("selenium_version", "4.0.0");
+//	ltOptions.put("w3c", true);
+//	browserOptions.setCapability("LT:Options", ltOptions);
 	
 	
 	@Test(priority = 4)

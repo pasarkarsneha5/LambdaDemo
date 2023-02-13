@@ -5,8 +5,11 @@
     <classes>
       <class name="com.lambdatest.demo.tests.LTLoginPageTest">
         <methods>
+          <include name="loginPageUrlTest"/>
+          <include name="doLogin"/>
           <include name="tearDown"/>
-          <include name="setup"/>
+          <include name="ForgetPasswordLinkPresent"/>
+          <include name="setUp"/>
           <include name="loginPageTitleTest"/>
         </methods>
       </class> <!-- com.lambdatest.demo.tests.LTLoginPageTest -->

@@ -6,9 +6,9 @@ import java.util.List;
 public class Constants {
 
 	public static final String LOGIN_PAGE_TITLE ="Log in";
-	public static final String LOGIN_PAGE_URL_FRACTION ="freedomemployeeqa";
+//	public static final String LOGIN_PAGE_URL_FRACTION ="freedomemployeeqa";
 	public static final int DEFAULT_TIMEOUT = 20;
-	public static final String HOME_PAGE_TITLE = "Dashboard - Freedom Medical";
+	public static final String HOME_PAGE_TITLE = "user-welcome";
 	
 	
 	public static List<String> getFMModulesList(){

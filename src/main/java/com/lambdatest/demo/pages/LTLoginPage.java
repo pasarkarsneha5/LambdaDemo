@@ -20,10 +20,13 @@ public class LTLoginPage {
 		
 		//3. By locators: OR
 		
-		private By email = By.id("logonIdentifier");
-		private By password = By.id("password");
-		private By loginButton = By.xpath("//button[@id='next']");
-		private By forgetyourpasswordlink = By.id("forgotPassword");
+		//private By email = By.xpath("//input[@type='email']");
+		private By orgname = By.id("Name");
+		private By saveorgname = By.id("btn-tenant-confirm");
+		private By email = By.id("Request_Email");
+		private By password = By.xpath("//input[@type='password']");
+		private By loginButton = By.xpath("//button[@id='btn-identity-confirm']");
+		
 		
 		//2. constructor of the page class
 		
@@ -42,13 +45,14 @@ public class LTLoginPage {
 		public String getLoginPageUrl() {
 			return driver.getCurrentUrl();
 			}
-		
-		public boolean isForgetPasswordLinkPresent() {
-			return eleUtil.doDisplayed(forgetyourpasswordlink);
-			}
-		
-		
+		public void enterOrg(String org)
+		{
+			eleUtil.doSendKeys(orgname, org);
+			eleUtil.doClick(saveorgname);
+		}
+				
 		public LTHomePage doLogin(String un, String pwd) {
+			
 			eleUtil.doSendKeys(email, un);
 			eleUtil.doSendKeys(password, pwd);
 			eleUtil.doClick(loginButton);

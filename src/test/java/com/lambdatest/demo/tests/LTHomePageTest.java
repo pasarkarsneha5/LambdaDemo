@@ -12,7 +12,7 @@ public class LTHomePageTest extends BaseTest{
 
 	@BeforeClass 
 	public void FMHomePage() {
-		 homepage = loginpage.doLogin(prop.getProperty("username").trim(),prop.getProperty("password").trim());
+		homepage = loginpage.doLogin(prop.getProperty("username").trim(), prop.getProperty("password").trim());
 	}
 	@Test
 	public void homePageTitle() {
